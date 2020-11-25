@@ -10,6 +10,8 @@
         {{book.author.full_name()}}
     </div>
 
+    <a href="/books/{{book.id}}">{{book.title}}</a>
+
     <form action="/books/{{book.id}}/delete" method = "POST">
         <button type="submit"> Delete </button>
     </form>
