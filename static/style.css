@@ -1,4 +1,36 @@
 body{
   font-family: "Helvetica", arial, sans-serif; font-size: 16px;
+  margin: 0;
+  padding: 0;
 }
 
+body > header {
+  background-color: lightslategray;
+  color: indianred;
+  padding: 20px;
+
+  
+}
+
+body > header > h1{
+  font-size: 75px;
+  text-align: center;
+  justify-content: space-between;
+}
+
+body > header > nav > ul > li > a {
+  text-decoration: none;
+  border: solid black 1px;
+  padding: 10px 200px;
+  
+  
+}
+
+body > header > nav > ul {
+  list-style: none;
+  text-align: center;
+  display: flex;
+  justify-content: space-around;
+  font-size: 20px;
+  
+}
