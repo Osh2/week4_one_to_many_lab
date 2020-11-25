@@ -1,0 +1,53 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<!-- title  -->
+<form action="/books", method ="POST">
+    <div>
+        <label for="title"> Title: </label>
+        <input type="text" 
+                name="title" 
+                id="title"
+                required
+                autofocus>
+    </div>
+<!-- genre -->
+    <div>
+        <label for="genre">Genre:</label>
+        <input type="text"
+                name="genre"
+                id="genre"
+                required
+                autofocus>
+    </div>
+<!-- publisher -->
+    <div>
+        <label for="publisher">Publisher:</label>
+        <input type="text"
+                    name="publisher"
+                    id="publisher"
+                    required
+                    autofocus>
+    </div>
+<!-- author -->
+    <div>
+        <label for="first_name">Author First Name:</label> 
+        <input type="text"
+                name="first_name"
+                id="first_name"
+                required
+                autofocus>
+
+        <label for="last_name">Author Last Name:</label> 
+        <input type="text"
+                name="last_name"
+                id="last_name"
+                required
+                autofocus>
+    </div>
+    <button type="submit">Add Book</button>
+
+</form>
+
+{% endblock %}
